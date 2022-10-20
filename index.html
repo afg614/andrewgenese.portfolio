@@ -12,6 +12,7 @@
       img{
           max-width: 100%;
           height: auto;
+          align-items: center;
       }
 
       h1{
@@ -19,7 +20,7 @@
           text-align: center;
           font-family: Georgia, 'Times New Roman', Times, serif;
           font-kerning: auto;
-          font-size: 40px;
+          font-size: 34px;
       }
       h2{
         color: #8b85c1;
@@ -34,45 +35,61 @@
           padding-left: 80px;
           padding-right: 80px;
           line-height: 40px;
-          font-size: 20px;
+          font-size: 18px;
         }
       .container-fluid{
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           grid-auto-rows: minmax(50px, auto);
         }
 
       .navigation{
-          grid-column: 1/4;
+          grid-column: 1/3;
           margin-left: -12px;
           margin-right: -12px;
         }
 
+      .hero-1{
+        grid-column: 1/2;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        color: purple;
+      }
+      .hero-2{
+        grid-column: 2/3;
+      }
+
       .box-1{
-        grid-column: 1/4;
+        grid-column: 1/3;
         padding-bottom: 16px;
-        background-color: #474448;
         margin-left: -12px;
         margin-right: -12px;
         }
 
       .logo{
-        grid-column: 1/4;
+        grid-column: 1/3;
         background-color: #474448;
         margin-left: -12px;
         margin-right: -12px;
         
       }
 
+      .car-badge{
+        grid-column: 1/3; 
+        margin-top: -40px; 
+        align-items: center;
+      }
+
       .box-2{
-          grid-column: 1/4;
+          grid-column: 1/3;
           padding-top: 50px;
           margin-left: -12px;
           margin-right: -12px;
           margin-top: 50px;
         }
       .box-3{
-          grid-column: 1/4;
+          grid-column: 1/3;
           margin-left: -12px;
           margin-right: -12px;
           margin-top: 50px;
@@ -80,7 +97,7 @@
         }
         
       .box-4{
-          grid-column: 1/4;
+          grid-column: 1/3;
           margin-left: -12px;
           margin-right: -12px;
           margin-top: 50px;
@@ -99,7 +116,7 @@
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
         }
         .web-img-3{
-          grid-column: 3/4;
+          grid-column: 1/3;
           background-color: brown;
           margin: 10px;
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
@@ -120,7 +137,7 @@
         }
 
       .box-7{
-          grid-column: 1/4;
+          grid-column: 1/3;
           margin-left: -12px;
           margin-right: -12px;
           margin-top: 50px;
@@ -131,12 +148,12 @@
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
         }
         .web-img-5{
-          grid-column: 2/3;
+          grid-column: 1/2;
           margin: 10px;
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
         }
         .web-img-6{
-          grid-column: 3/4;
+          grid-column: 2/3;
           margin: 10px;
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
         }
@@ -153,14 +170,9 @@
           box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
         }
 
-        .c-3{
-          grid-column: 3/4;
-          margin: 10px;
-          box-shadow: 4px 2px 9px rgba(112, 112, 112, 0.699);
-        }
 
       .box-8{
-        grid-column: 1/4;
+        grid-column: 1/3;
         margin-left: -12px;
         margin-right: -12px;
         margin-top: 50px;
@@ -179,7 +191,7 @@
 
       footer{
         /* Make this blue text */
-          grid-column: 1/4;
+          grid-column: 1/3;
           background-color: #8B85C1; 
           color: #E0DDCF;
           margin-left: -12px;
@@ -217,16 +229,81 @@
     </div>
 
     <!-- Home page -->
-    <div id="Home" class="box-1">
-      <img src="images/maverick.png" alt="logo" style="max-width: 100%; display: flex; justify-content: space-around; align-items: center;">
-      <p style="color:#E0DDCF">Hi there!  This is my portfolio website. I hand-coded this website using HTML5, CSS, and Bootstrap. Although I built this for a class project I will be using this to place all my work. I am currently a student at James Madison University. I am expecting to graduate in May of 2023 with a degree in Media Arts and Design with a concentration in Interactive Design. Through my four years at university, I have developed a diverse skill set to help me create content through media. I am a web developer, media artist, photographer, and help people develop their résumés.  </p><br>
+    <div class="hero-1">
+      <img src="images/hero-image-1.png">
+    </div>
+    <div class="hero-2">
+      <img src="images/hero-image.jpg">
     </div>
 
-  <!-- Photography -->  
+    <div id="Home" class="box-1">
+      <p>Hi there.  This is my portfolio website. I hand-coded this website using HTML5, CSS, and Bootstrap. I am currently a student at James Madison University. I am graduating in May of 2023 with a degree in Media Arts and Design with a concentration in Interactive Design. Through my four years at university, I have developed a diverse skill set to help me create compelling content through media. I am a web developer, graphic designer, photographer, and skilled in UX design and research. I am excited to work, passionate about user experience/design, and ready to be a part of your team. </p>
+      <br>
+
+      <h1>Recent Work</h1>
+      <p style="text-align: center;">I had the privelege and honor of redesigning the JMU Police Departments police car and badges.</p>
+      
+    </div>
+    <div class="car-badge">
+      <img src="images/car-badge.jpg" alt="">
+    </div>
+
+    <!-- Web Development -->
+    <div id="web" class="box-4">
+      <h1>Web Development</h1>
+      <p>I started taking Interactive Design classes at James Madison University in spring of 2021... Below are some photos of my recent web pages. I am familiar HTML, Wordpress, CSS, Javascript, and Figma.       <b>ADD LINKS TO THIS, YOU TOOL.</b></p>
+    </div>
+
+        <!-- Web Images-->
+        <div class="web-img-1">
+          <img src="images/web1.jpg" alt="mobile Id redesign">
+        </div>
+        <div class="web-img-2">
+          <img src="images/web3.jpg" alt="Resume site">
+        </div>
+        
+    <!-- App Dev --> 
+    <div id="app" class="box-5">
+      <h1>App Development</h1>
+      <p>I have done several App development projects. I did a redesign of an app we frequently use here at JMU. I'll attach a link to my redesign site <a href="https://afg614.github.io/afr/" target="_blank">here.</a> One of my major projects for my app development work, from start to end, we designed everything. It's a search engine for small business, locals, and travelers who want to navigate a town and see what stores or restaurants are there. It is called <b>Gratify.</b> Since it has been some time since I developed the program I had to request access to the file. As soon as I have it I will be attatching our promo video and screenshots.</p>
+    </div>
+
+    <!-- Résumés --> 
+    <div id="resume" class="box-6">
+      <h1>Résumés</h1>
+      <p>
+        It started as a collective of favors I was doing for friends that turned into a passion project and now I have clients and a website I use to run a small business making these. I use Adobe Illustrator and Indesign to design my products. I can also do cover letters, business cards, and portfolio sites, such as this one!
+      </p>
+    </div>
+        <!-- Resume Images-->
+        <div class="web-img-5">
+          <img src="images/resumes-2.jpg" alt="resume 2">
+        </div>
+
+        <div class="web-img-6">
+          <img src="images/resumes-3.jpg" alt="resume 3">
+        </div>
+
+
+    <!-- Commission Work --> 
+    <div id="commission" class="box-7">
+      <h1>Commission Work</h1>
+      <p>I do commission work in my free periods. I have attached three pieces below. I was commissioned to do a shirt for JMU PD in the spring of 2022. I am currently working with the school to potentially roll out a new set of Jaccard's for students and faculty. I use Photoshop and Illustrator to create my designs primarily. I am LinkedIn certified in Photoshop, Illustrator, Indesign, and Adobe XD.
+      </p>
+    </div>
+
+    <!--- Commission Pictures --->
+    <div class="c-1">
+      <img src="images/shirt-1.jpg" alt="shirt front">
+    </div>
+    <div class="c-2">
+      <img src="images/shirt-2.jpg" alt="shirt back">
+    </div>
+
+    <!-- Photography -->  
     <div id="photo" class="box-2">
       <h1>Photography</h1>
-      <p>I began my photography journey in high school. I was enrolled in a film class. In that class, I learned the technology of a camera and how to manipulate one to capture exactly what I wanted. It wasn't until my sophomore year of college that I purchased a camera and used it for class. It slowly became a passion. I now do headshots and photoshoots to generate income. I have a slideshow showcasing some of my favorite pieces so far.<br><br>
-      My skills include photoshop, lightroom, black and white photograpy, and aerial photography.
+      <p>I do headshots and photoshoots. I have a slideshow showcasing some of my favorite pieces so far. My skills include photoshop, lightroom, black and white photograpy, and aerial photography.
       </p>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -284,76 +361,14 @@
       </div>
     </div>
 
-    <!-- Web Development -->
-    <div id="web" class="box-4">
-      <h1>Web Development</h1>
-      <p>I started taking Interactive Design classes at James Madison University in spring of 2021... Below are some photos of my recent web pages. I am familiar HTML, Wordpress, CSS, Javascript, and will be taking classes in python in the Summer of 22.</p>
-    </div>
 
-        <!-- Web Images-->
-        <div class="web-img-1">
-          <img src="images/web1.jpg" alt="mobile Id redesign">
-        </div>
-        <div class="web-img-2">
-          <img src="images/web2.jpg" alt="NBA site">
-        </div>
-        <div class="web-img-3">
-          <img src="images/web3.jpg" alt="Resume site">
-        </div>
-
-    <!-- App Dev --> 
-    <div id="app" class="box-5">
-      <h1>App Development</h1>
-      <p>I have done several App development projects. I did a redesign of an app we frequently use here at JMU. Ill attatch a link to my redesign site <a href="https://afg614.github.io/afr/" target="_blank">here.</a> One of my major projects for my app development work, from start to end, we designed everything. It's a search engine for small business, locals, and travelers who want to navigate a town and see what stores or restaurants are there. It is called <b>Gratify.</b> Since it has been some time since I developed the program I had to request access to the file. As soon as I have it I will be attatching our promo video and screenshots.</p>
-    </div>
-
-    <!-- Résumés --> 
-    <div id="resume" class="box-6">
-      <h1>Résumés</h1>
-      <p>
-        It started as a collective of favors I was doing for friends that turned into a passion project and now I have clients and a website I use to run a small business making these. I use Adobe Illustrator and Indesign to design my products. I can also do cover letters, business cards, and portfolio sites, such as this one!
-      </p>
-    </div>
-        <!-- Resume Images-->
-        <div class="web-img-4">
-          <img src="images/resumes-1.jpg" alt="resume 1">
-        </div>
-
-        <div class="web-img-5">
-          <img src="images/resumes-2.jpg" alt="resume 2">
-        </div>
-
-        <div class="web-img-6">
-          <img src="images/resumes-3.jpg" alt="resume 3">
-        </div>
-
-
-    <!-- Commission Work --> 
-    <div id="commission" class="box-7">
-      <h1>Commission Work</h1>
-      <p>I do commission work in my free periods. I have attached three pieces below. I was commissioned to do a shirt for JMU PD in the spring of 2022. I am currently working with the school to potentially roll out a new set of Jaccard's for students and faculty. I use Photoshop and Illustrator to create my designs primarily. I am LinkedIn certified in Photoshop, Illustrator, Indesign, and Adobe XD.
-      </p>
-    </div>
-
-    <!--- Commission Pictures --->
-      <div class="c-1">
-        <img src="images/shirt-1.jpg" alt="shirt front">
-      </div>
-      <div class="c-2">
-        <img src="images/shirt-2.jpg" alt="shirt back">
-      </div>
-      <div class="c-3">
-        <img src="images/card.jpg" alt="jaccard redesign">
-      </div>
 
     <!-- Conact/Future -->
     <div id="contact" class="box-8">
-      <h1>Conact</h1>
-      <p></p>
         
       <h2 style="text-align: center;">The best way to contact me is through email or the informaiton below. I look forward to hearing from you.</h2>
-      <p>
-        I am avaialable Monday through Friday. I typically respond to email within two days.
+      <p style="text-align: center;">
+        I am avaialable Monday through Friday. I typically respond to email within 24 hours.
       </p>
 
         <form action="mailto:genesea614@gmail.com" method="post" enctype="text/plain">
@@ -366,16 +381,18 @@
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
         </form><br>
-        
+        <P style="text-align: center;">
+          BACK TO TOP BUTTON HERE
+        </P>
         
     </div>
 
     <footer>
       <p style="color: #E0DDCF;">
         Andrew Genese<br>
-        Hand coded for SMAD 308<br>
-        HTML, CSS, bootstrap<br>
-        To reach me, please email: Genesea614@gmail<br>
+        Mk. 2023 // V.1.4<br>
+        Hand coded using HTML, CSS, Bootstrap<br>
+        Geneseaf@dukes.jmu.edu<br>
       </p>
       
     </footer>
